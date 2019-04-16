@@ -1,11 +1,10 @@
 # simpleIDS
 Simple intrusion detection system
-Incomplete at the moment, however
-the idea is to make a hash of the files
-listed in config.
+1 first run Ids_hash.sh with config file in same dir
+2 to check if anything has changed run Ids_compare.sh with previous hash in same directory
+3 Any changed file will be printed to shell
 
-* Store the hashes.
-* Compare the hashes on demand.
-* Report if hash has changed
-
-Maybe build on this to be more like tripwire, but simpler.
+### Future
+* Implement pgp encryption for hashSum
+* Take arbitrary file as config
+* Take arbitrary file as hashsum
